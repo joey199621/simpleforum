@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	padding: 10px;
+	border-bottom: 2px solid black;
+	display: flex;
+	align-items: center;
+}
+header a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	margin-right: 5px;
+}
+header a:hover {
+	text-decoration: underline;
+}
+#loginForm, #postForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#topics, #topic, #loginForm, #postForm {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	border: 1px solid black;
+}
+#topics .topic {
+	padding: 10px;
+	border-bottom: 1px solid black;
+	color: black;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+}
+#topic .message {
+	border-bottom: 1px solid black;
+	display: flex;
+}
+#topic .message:last-child {
+	border-bottom: none;
+}
+#topics .topic .pseudo, .messageUserDate {
+	font-style: italic;
+	font-size: 12px;
+	color: grey;
+}
+#topics .topic:hover {
+	text-decoration: underline;
+}
+#topics .topic:last-child {
+	border-bottom: none;
+}
+.messageUser {
+	border-right: 1px solid black;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.messageMain {
+	padding: 10px;
+}
+.fluid {
+	width: 1000px;
+	margin: auto;
+}
+@media screen and (max-width: 1000px) {
+	.fluid {
+		max-width: 100%;
+	}
+}
