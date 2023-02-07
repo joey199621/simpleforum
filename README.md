@@ -1,15 +1,15 @@
 # simpleforum
 Forum scratched in 1 hour
 
-to make it work, create a file named '/msconfig.php' (or change location in common.php file) with the following content:
+to make it work, create php a file named '/msconfig.php' (or change location in common.php file) with the following content:
 
-<?php
+define these two constant in the config file:
   //databaser user
 	define("DBUSER", "root");
    //database password
 	define("DBPASS", "root");
 
-?>
+
 
 Create a mysql database named jaforum and import the .sql file
 
